@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import ReCAPTCHA from "../node_modules/react-google-recaptcha";
-
+import Article from "../src/Article.js";
 import './App.css';
 
 function onChange(value) {
@@ -18,6 +18,7 @@ class App extends Component {
         sitekey=""
         onChange={onChange}
       />
+      <Article/>
     </form>
           <img src={logo} className="App-logo" alt="logo" />
           <p>
