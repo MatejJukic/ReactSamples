@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import ReCAPTCHA from "../node_modules/react-google-recaptcha";
+
 import './App.css';
 
+function onChange(value) {
+  console.log("Captcha value:", value);
+}
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
+        <form>
+      <ReCAPTCHA
+        
+        sitekey=""
+        onChange={onChange}
+      />
+    </form>
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
