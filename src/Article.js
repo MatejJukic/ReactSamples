@@ -7,14 +7,14 @@ class Article extends React.Component {
     render() {
         const disqusShortname = 'example';
         const disqusConfig = {
-            url: 'http://yuca.ba',
-            identifier: '23',
-            title: 'San Francisco',
+            url: 'http://www.youtube.com',
+            identifier: '56',
+            title: 'disqusconfig.title',
         };
 
         return (
             <div className="article">
-                <h1>{'San Francisco'}</h1>
+                <h1>{'GO!'}</h1>
                 <Disqus.CommentCount shortname={disqusShortname} config={disqusConfig}>
                     Comments
                 </Disqus.CommentCount>
